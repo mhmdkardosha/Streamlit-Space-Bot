@@ -10,5 +10,6 @@ python-dotenv
 
 # Langchain and related packages
 langchain
+langchain_experimental
 langchain-google-genai
 faiss-cpu
