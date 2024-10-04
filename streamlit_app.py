@@ -18,7 +18,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 load_dotenv()
 
 st.set_page_config(layout="wide", page_title="Spcae bot",
-                   page_icon="🚀", theme='dark')
+                   page_icon="🚀")
 st.title("Space bot 🚀")
 
 
