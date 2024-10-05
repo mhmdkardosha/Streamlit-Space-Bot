@@ -17,9 +17,9 @@ from langchain_core.messages import HumanMessage, AIMessage
 
 load_dotenv()
 
-st.set_page_config(layout="wide", page_title="Exobot",
+st.set_page_config(layout="wide", page_title="ExoBot",
                    page_icon="🚀")
-st.title("Exobot 🚀")
+st.title("ExoBot 🚀")
 
 
 def get_base64_of_bin_file(bin_file):
@@ -136,7 +136,7 @@ for message in st.session_state.chat_history:
         with st.chat_message("Explorer"):
             st.markdown(message.content)
     elif isinstance(message, AIMessage):
-        with st.chat_message("Exobot"):
+        with st.chat_message("ExoBot"):
             st.markdown(message.content)
 
 user_query = st.chat_input("Ask me anything about exoplanets")
@@ -145,7 +145,7 @@ if user_query is not None and user_query != "":
     st.session_state.chat_history.append(HumanMessage(user_query))
     with st.chat_message("Explorer"):
         st.markdown(user_query)
-    with st.chat_message("Exobot"):
+    with st.chat_message("ExoBot"):
         with st.spinner("Thinking..."):
             ai_response = get_response(
                 user_query, st.session_state.chat_history)
