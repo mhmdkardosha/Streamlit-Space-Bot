@@ -21,7 +21,7 @@ ExoBot is an interactive Streamlit chatbot designed to answer questions about ex
 1. Clone this repository:
 
     ```powershell
-    git clone https://github.com/mhmdkardosha/Exoplanets-space-bot.git
+    git clone https://github.com/mhmdkardosha/Explanets-space-bot
     cd Exoplanets-space-bot
     ```
 
